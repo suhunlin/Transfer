@@ -1,9 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/lottery_bg"
     tools:context=".Page2Activity">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Big lottery"
+        android:textStyle="bold"
+        android:textSize="38sp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        />
+    <LinearLayout
+        android:id="@+id/topLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/title"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_bg"
+            android:text="7"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/num0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_bg"
+            android:text="7"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_bg"
+            android:text="7"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/num3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_bg"
+            android:text="7"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/num4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_bg"
+            android:text="7"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/num5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_bg"
+            android:text="7"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:textAllCaps="false"
+            android:onClick="exit"
+            />
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
